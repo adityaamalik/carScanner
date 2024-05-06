@@ -72,6 +72,15 @@
         fileChosen.textContent = this.files[0].name;
         fileChosen.style.display = "block";
       });
+
+      const cameraBtn = document.getElementById("camera-btn");
+
+      const photoClicked = document.getElementById("photo-clicked");
+
+      cameraBtn.addEventListener("change", function () {
+        photoClicked.textContent = this.files[0].name;
+        photoClicked.style.display = "block";
+      });
     </script>
   </body>
 </html>
